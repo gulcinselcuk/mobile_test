@@ -53,11 +53,11 @@ public class Appium01 {
         By preferenceButton= By.xpath("//android.widget.TextView[@text='Preference']");
         driver.findElement(preferenceButton).click();
 
-        By preferenceDependencies= By.xpath("//android.widget.TextView[@text='3. Preference dependencies']");
-        driver.findElement(preferenceDependencies).click();
-
-        By wifiOk= By.id("android:id/checkbox");
-        driver.findElement(wifiOk).click();
+//        By preferenceDependencies= By.xpath("//android.widget.TextView[@text='3. Preference dependencies']");
+//        driver.findElement(preferenceDependencies).click();
+//
+//        By wifiOk= By.id("android:id/checkbox");
+//        driver.findElement(wifiOk).click();
 
         //ok tiklanmis mi tiklanmamis mi acaba? diye test ettim.
 //        WebElement wifiOk2= driver.findElement(By.id("android:id/checkbox"));
@@ -68,17 +68,21 @@ public class Appium01 {
 //
 //        };
 
-        By wifiSettings= By.xpath("//android.widget.TextView[@text='WiFi settings']");
-        driver.findElement(wifiSettings).click();
+//        By wifiSettings= By.xpath("//android.widget.TextView[@text='WiFi settings']");
+//        driver.findElement(wifiSettings).click();
+//
+//        By wifiText= By.id("android:id/edit");
+//        driver.findElement(wifiText).sendKeys("wifiText");
+//
+//        By secondOkButton=By.id("android:id/button1");
+//        driver.findElement(secondOkButton).click();
 
-        By wifiText= By.id("android:id/edit");
-        driver.findElement(wifiText).sendKeys("wifiText");
+        By fragment=By.xpath("//android.widget.TextView[@text='7. Fragment']");
+        driver.findElement(fragment).click();
 
-        By secondOkButton=By.id("android:id/button1");
-        driver.findElement(secondOkButton).click();
-
-//        By fragment=By.xpath("//android.widget.TextView[@text='7. Fragment']");
-//        driver.findElement(fragment).click();
+        By switchButton=By.xpath("//android.widget.Switch[@bounds='[916,561][1038,632]']");
+        driver.findElement(switchButton).click();
+        driver.navigate().back();
 
 
 
